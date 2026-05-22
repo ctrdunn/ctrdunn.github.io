@@ -64,10 +64,43 @@
                 height: 300px;
             }
         }
+        nav {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        a {
+            color: #CC5500;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline
+        }
     </style>
 </head>
 
 <body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
 <header>
     <h1>Cutler Dunn</h1>
@@ -88,15 +121,31 @@
         <div class="card">
             <h2>Projects</h2>
             <ul>
-                <li>Project 1 – Description coming soon</li>
-                <li>Project 2 – Description coming soon</li>
+                <li>
+                    <strong>Project 1</strong> – Description coming soon
+                    <br>
+                    <a href="https://github.com/ctrdunn/project1" target="_blank">
+                        View on GitHub
+                    </a>
+                </li>
+
+                <li>
+                    <strong>Project 2</strong> – Description coming soon
+                    <br>
+                    <a href="https://github.com/ctrdunn/project2" target="_blank">
+                        View on GitHub
+                    </a>
+                </li>
             </ul>
         </div>
 
         <div class="card">
             <h2>Reach out to me!</h2>
-            <p>Email: ctrdunn@gmail.com</p>
-            <p>Phone: (720) 445-5356</p>
+            <p>Email: <a href="mailto:ctrdunn@gmail.com">ctrdunn@gmail.com</a></p>
+            <p>Phone: <a href="tel:17204455356">(720) 445-5356</a></p>
+            <p>                LinkedIn:
+                <a href="https://www.linkedin.com/in/cutler-j-dunn/" target="_blank">
+                    View my profile</a></p>
         </div>
 
     </div>
