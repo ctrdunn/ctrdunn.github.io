@@ -7,37 +7,44 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #CC5500;
+            background: #f4f4f9;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
 
         header {
-            background: #4a6cf7;
+            background: #CC5500;
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px;
         }
 
-        h1 {
-            margin: 0;
+        .main {
+            display: flex;
+            flex: 1;
         }
 
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
+        .content {
+            width: 50%;
+            padding: 30px;
+            box-sizing: border-box;
         }
 
         .card {
             background: white;
-            margin: 20px 0;
+            margin-bottom: 20px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
 
-        ul {
-            padding-left: 20px;
+        .image-side {
+            width: 50%;
+            background-image: url('https://via.placeholder.com/800');
+            background-size: cover;
+            background-position: center;
         }
 
         footer {
@@ -45,7 +52,17 @@
             padding: 15px;
             background: #222;
             color: white;
-            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+            }
+
+            .content, .image-side {
+                width: 100%;
+                height: 300px;
+            }
         }
     </style>
 </head>
@@ -54,31 +71,36 @@
 
 <header>
     <h1>Cutler Dunn</h1>
-    <p>Welcome to my portfolio</p>
+    <p>Welcome to my website!</p>
 </header>
 
-<div class="container">
+<div class="main">
 
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            I'm currently a Mechanical Engineering student at BYU. I love anything I can disassemble, and anything to do with NASA! Did you watch the Artemis launch? I did!
-        </p>
+    <div class="content">
+
+        <div class="card">
+            <h2>About Me</h2>
+            <p>
+                I'm currently a Mechanical Engineering student at BYU. I love anything I can disassemble, and anything to do with NASA! Did you watch the Artemis launch? I did!
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1 – Description coming soon</li>
+                <li>Project 2 – Description coming soon</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Email: your-email@example.com</p>
+        </div>
+
     </div>
 
-    <div class="card">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1 – Description coming soon</li>
-            <li>Project 2 – Description coming soon</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>I'd love to hear from you!</h2>
-        <p>Email: ctrdunn@gmail.com</p>
-        <p>Phone: (720) 445-5356</p>
-    </div>
+    <div class="image-side"></div>
 
 </div>
 
