@@ -43,7 +43,7 @@ header {
 
 .image-side {
     width: 50%;
-    background-image: url('images/selfie-rocket.jpeg');
+    background-image: url('images/selfie-rocket.jpg');
     background-size: cover;
     background-position: center;
 }
