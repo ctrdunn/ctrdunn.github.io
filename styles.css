@@ -115,6 +115,20 @@ header {
     border-radius: 10px;
 }
 
+.resume-btn {
+    background: #CC5500;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resume-btn:hover {
+    background: #a94400;
+}
+
 @media (max-width: 768px) {
     .project-card {
         flex-direction: column;
