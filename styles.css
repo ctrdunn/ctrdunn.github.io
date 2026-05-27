@@ -46,6 +46,8 @@ header {
     width: 50%;
 
     background-image: url('images/selfie-rocket.jpg');
+    border-radius: 12px;
+    overflow: hidden;
     background-size: cover;
     background-position: center;
 
