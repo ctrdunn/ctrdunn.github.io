@@ -20,18 +20,17 @@ header {
     margin-top: 0px;
     }
 
+
 .main {
     display: flex;
-    flex: 1;
-    margin-top: 30px;
-    padding: 10px;
+    padding: 20px;
+    align-items: stretch;
 }
-
-
 
 .content {
     width: 50%;
     padding: 30px;
+    padding-right: 10px;
     box-sizing: border-box;
 }
 
@@ -44,17 +43,13 @@ header {
 }
 
 .image-side {
-
-width: 50%;
-    aspect-ratio: 1 / 1;
-    max-height: 300px;
+    width: 50%;
 
     background-image: url('images/selfie-rocket.jpg');
     background-size: cover;
     background-position: center;
 
     border-radius: 12px;
-
 }
 
 .project {
