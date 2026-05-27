@@ -24,7 +24,9 @@ header {
     display: flex;
     flex: 1;
     margin-top: 40px;
+    padding: 20px;
 }
+
 
 
 .content {
@@ -42,11 +44,17 @@ header {
 }
 
 .image-side {
-    width: 40%;
+
+width: 50%;
     aspect-ratio: 1 / 1;
+    max-height: 500px;
+
     background-image: url('images/selfie-rocket.jpg');
     background-size: cover;
     background-position: center;
+
+    border-radius: 12px;
+
 }
 
 .project {
