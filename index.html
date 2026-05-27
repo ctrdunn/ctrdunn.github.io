@@ -1,115 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Cutler's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
-
-        header {
-            background: #CC5500;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 30px;
-            }
-
-        .main {
-            display: flex;
-            flex: 1;
-            margin-top: 120px; /* 👈 pushes content below header */
-            }
-
-
-        .content {
-            width: 50%;
-            padding: 30px;
-            box-sizing: border-box;
-        }
-
-        .card {
-            background: #f9f9f9;
-            margin-bottom: 20px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .image-side {
-            width: 50%;
-            background-image: url('https://via.placeholder.com/800');
-            background-size: cover;
-            background-position: center;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            background: #222;
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .main {
-                flex-direction: column;
-            }
-
-            .content, .image-side {
-                width: 100%;
-                height: 300px;
-            }
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-
-            background: #222;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-
-        a {
-            color: #CC5500;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline
-        }
-    </style>
 </head>
 
 <body>
 
 <nav>
     <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Projects ▾</button>
+        <div class="dropdown-content">
+            <a href="clockmaking.html">Clockmaking</a>
+            <!-- Add more projects here later -->
+        </div>
+    </div>
 </nav>
+
 
 <header>
 
@@ -124,8 +35,9 @@
         <div class="card">
             <h2>About Me</h2>
             <p>
-                I'm currently a Mechanical Engineering student at BYU. I love anything I can disassemble, and anything to do with NASA!<br>
-                Did you watch the Artemis launch? I did!
+                I'm currently a Mechanical Engineering student at BYU. I love anything I can disassemble,<br>
+                and anything to do with NASA! Did you watch the Artemis launch? I did!<br><br>
+                I'm still working on this website, so if you have any questions feel free to contact me!
             </p>
         </div>
 
@@ -138,28 +50,31 @@
                     View my profile</a></p>
         </div>
 
+
         <div class="card">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <strong>Project 1</strong> – Description coming soon
-                    <br>
-                    <a href="https://github.com/ctrdunn/project1" target="_blank">
-                        View on GitHub
-                    </a>
-                </li>
+    <h2>Projects</h2>
 
-                <li>
-                    <strong>Project 2</strong> – Description coming soon
-                    <br>
-                    <a href="https://github.com/ctrdunn/project2" target="_blank">
-                        View on GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
+    <div class="card">
+    <h2>Projects</h2>
 
+    <div class="project">
+        <h3>Clockmaking Presentation</h3>
+
+        <img src="clock-preview.png" style="width:100%; border-radius:8px;">
+
+        <p>
+            I explored and researched clockmaking, including mechanical design,<br>
+            engineering requirements, time regulation mechanisms, and historical development.
+        </p>
+
+        <a href="clockmaking.html">
+            View Project Details →
+        </a>
     </div>
+</div>
+
+</div>
+
 
     <div class="image-side"></div>
 
