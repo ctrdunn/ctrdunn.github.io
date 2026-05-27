@@ -43,10 +43,11 @@ header {
 
 .image-side {
     width: 50%;
-    background-image: url('https://via.placeholder.com/800');
+    background-image: url('images/selfie-rocket.jpeg');
     background-size: cover;
     background-position: center;
 }
+
 .project {
     margin-top: 15px;
 }
