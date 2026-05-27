@@ -5,6 +5,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+
+<body>
+
+<div id="navbar"></div>
+
+<div style="margin-top:80px; padding: 30px;">
+    <!--  <h2>Clockmaking Presentation</h2>
+
+    <p>
+    This project explores the principles of clockmaking, including mechanical design,
+    precision engineering, and historical development.
+    </p>
+    -->
+    <a href="clockmaking.pdf" target="_blank">
+        Download Full Presentation (PDF)
+    </a>
+    <div class="slides">
+
+        <img src="images/page_1.png">
+        <img src="images/page_2.png">
+        <img src="images/page_3.png">
+        <img src="images/page_4.png">
+        <img src="images/page_5.png">
+        <img src="images/page_6.png">
+        <img src="images/page_7.png">
+        <img src="images/page_8.png">
+        <img src="images/page_9.png">
+
+    </div>
+
+    <br>
+
+
+</div>
+
 <script>
     fetch("navbar.html")
       .then(response => response.text())
@@ -12,40 +47,6 @@
         document.getElementById("navbar").innerHTML = data;
       });
 </script>
-
-<body>
-
-<div id="navbar"></div>
-
-<div style="margin-top:80px; padding: 30px;">
-<!--  <h2>Clockmaking Presentation</h2>
-
-<p>
-This project explores the principles of clockmaking, including mechanical design,
-precision engineering, and historical development.
-</p>
--->
-    <a href="clockmaking.pdf" target="_blank">
-        Download Full Presentation (PDF)
-    </a>
-    <div class="slides">
-
-    <img src="images/page_1.png">
-    <img src="images/page_2.png">
-    <img src="images/page_3.png">
-    <img src="images/page_4.png">
-    <img src="images/page_5.png">
-    <img src="images/page_6.png">
-    <img src="images/page_7.png">
-    <img src="images/page_8.png">
-    <img src="images/page_9.png">
-
-</div>
-
-    <br>
-
-
-</div>
 
 </body>
 </html>

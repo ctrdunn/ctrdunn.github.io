@@ -7,16 +7,9 @@
 
 </head>
 
-<script>
-    fetch("navbar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-      });
-</script>
-<div id="navbar"></div>
-
 <body>
+
+<div id="navbar"></div>
 
 <header>
 
@@ -89,7 +82,7 @@
         </div>
 
         <div class="project-image">
-            <img src="images/rocket-thumbnail" alt="Rocketry Preview">
+            <img src="images/rocket-thumbnail.jpeg" alt="Rocketry Preview">
         </div>
 
     </a>
@@ -108,3 +101,17 @@
         assistance from Microsoft Copilot.
     </p>
 </footer>
+
+
+<script>
+    window.addEventListener("DOMContentLoaded", function () {
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    });
+</script>
+
+</body>
+</html>
